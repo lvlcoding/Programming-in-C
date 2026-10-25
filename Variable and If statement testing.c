@@ -1,9 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    float gpa = 3.5;
+    float gpa = 0.0f    ;
     char grade = '\0';
-    char class_name[] = "Mathematics";
+    char class_name[25] = "";
+
+    printf("What is your GPA?\n");
+    scanf("%f", &gpa);
+
+    printf("What class are you in?\n");
+    scanf("%s", &class_name);
 
     if (gpa >= 3.5) {
         grade = 'A';
